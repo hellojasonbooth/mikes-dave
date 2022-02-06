@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    background-color: #f7f7f7;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 999;
+}
+
+
+section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 7vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* border-bottom: 1px solid black; */
+}
+
+/* .section1 {
+    background-color: #c4f4d6;
+} */
+
+section:nth-child(odd)
+{
+    /* background-color: #acacac; */
+}
