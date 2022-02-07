@@ -9,7 +9,7 @@ import gsap from 'gsap'
 /**
  * Debug
  */
-// const gui = new dat.GUI()
+//const gui = new dat.GUI()
 
 
 const canvasTag = document.querySelector('canvas')
@@ -38,7 +38,7 @@ class Boiler {
         }
 
         this.giuParameters = {
-            bgColor: '#565d58',
+            bgColor: '#e0c2ae',
             planeCount: 10,
             radius: 2.2,
             offset: 0,
@@ -182,7 +182,7 @@ class Boiler {
             alpha: true
         })
         this.renderer.setSize(this.params.width, this.params.height)
-        //this.renderer.setClearColor(this.giuParameters.bgColor, 1)
+        this.renderer.setClearColor(this.giuParameters.bgColor, 1)
         this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     }
 
@@ -211,7 +211,6 @@ class Boiler {
 
 
         this.camera.position.y = - window.scrollY / this.params.height * this.giuParameters.objectDistance
-
         this.planeGroup.rotation.y = -this.scrollableDistance * Math.PI * 4
 
         //this.planeGroup.rotation.y = - window.scrollY / this.params.height * this.giuParameters.objectDistance
