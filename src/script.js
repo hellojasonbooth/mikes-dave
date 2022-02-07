@@ -138,7 +138,7 @@ class Boiler {
             gltf => {
                 this.model = gltf.scene
                 this.model.position.y = 1
-                this.model.position.x = -0.2
+                this.model.position.x = -0.2 
                 // this.model.scale.set(0.1, 0.1, 0.1)
                 this.scene.add(this.model)
             }
@@ -149,7 +149,7 @@ class Boiler {
         const ambientLight = new THREE.AmbientLight('#ffffff', 2)
 
         const directionalLight = new THREE.DirectionalLight('#ffffff', 2)
-        directionalLight.position.set(0, 1, 0)
+        directionalLight.position.set(0, 1, 2)
 
         this.scene.add(ambientLight, directionalLight)
     }
